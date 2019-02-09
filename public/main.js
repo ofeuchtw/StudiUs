@@ -1,5 +1,4 @@
 function signInOut() {
-	console.log(isUserSignedIn());
 	if(isUserSignedIn()) {
 		signOut();
 	} else {
@@ -8,14 +7,21 @@ function signInOut() {
 	console.log(isUserSignedIn());
 }
 
-// Signs-in Friendly Chat.
+//TODO:
+function displaySignInBox() {
+	//when user is logged in, display profile picture, name, and log out button
+
+	//otherwise, display empty user image and log in button
+}
+
+// Signs-in 
 function signIn() {
   // Sign in Firebase using popup auth and Google as the identity provider.
   var provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider);
 }
 
-// Signs-out of Friendly Chat.
+// Signs-out 
 function signOut() {
   // Sign out of Firebase.
   firebase.auth().signOut();
