@@ -1,11 +1,36 @@
+
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    if(isUserSignedIn()) {
+    	$(".searchbar").css("visibility", "visible");	
+    } 
+});
+
 function signInOut() {
 	if(isUserSignedIn()) {
 		signOut();
 	} else {
 		signIn();
 	}
-	console.log(isUserSignedIn());
 }
+
+// Signs-in 
+function signIn() {
+  // Sign in Firebase using popup auth and Google as the identity provider.
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider);
+
+
+    $(".searchbar").css("visibility", "visible");	
+   
+}
+
+// Signs-out 
+function signOut() {
+  // Sign out of Firebase.
+  firebase.auth().signOut();
+}
+
 
 //TODO:
 function displaySignInBox() {
@@ -14,18 +39,8 @@ function displaySignInBox() {
 	//otherwise, display empty user image and log in button
 }
 
-// Signs-in 
-function signIn() {
-  // Sign in Firebase using popup auth and Google as the identity provider.
-  var provider = new firebase.auth.GoogleAuthProvider();
-  firebase.auth().signInWithPopup(provider);
-}
 
-// Signs-out 
-function signOut() {
-  // Sign out of Firebase.
-  firebase.auth().signOut();
-}
+
 
 // Initiate firebase auth.
 function initFirebaseAuth() {
