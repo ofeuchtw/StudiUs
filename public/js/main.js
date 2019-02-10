@@ -1,26 +1,29 @@
 firebase.auth().onAuthStateChanged((user) => {
       if (user) {
-      
-
-        if( $('.searchbar').length ) {
-     		$(".searchbar").css("visibility", "visible");
-		}
-    	
-    	$("#setting_button").css("visibility", "visible");	
-    	$("#sign-in span").text("Sign Out");
-
+      	setUserInfo();
       }
 });
 
 // A $( document ).ready() block.
 $( document ).ready(function() {
     if(isUserSignedIn()) {
-    	$(".searchbar").css("visibility", "visible");
-    	$("#setting_button").css("visibility", "visible");	
-    	$("#sign-in span").text("Sign Out");
+    	setUserInfo();
     } 
  
 });
+
+function setUserInfo() {
+	 if( $('.searchbar').length ) {
+     		$(".searchbar").css("visibility", "visible");
+	}
+    	
+	$("#setting_button").css("visibility", "visible");	
+	$("#sign-in span").text("Sign Out");
+
+	$("#settings_icon").attr("src",getProfilePicUrl());
+}
+
+
 
 
 function signInOut() {

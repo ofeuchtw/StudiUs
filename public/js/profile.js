@@ -1,21 +1,22 @@
 firebase.auth().onAuthStateChanged((user) => {
       if (user) {
-    	setUserInfo();
+    	setUserProfile();
       }
 });
 
 // A $( document ).ready() block.
 $( document ).ready(function() {
     if(isUserSignedIn()) {
-    	setUserInfo();
+    	setUserProfile();
     } 
 });
 
 
-function setUserInfo() {
+function setUserProfile() {
 	$("#profile-pic").attr("src",getProfilePicUrl());
     $("#name").text(getUserName());
     $("#major").text(getMajor());
+
 
 }
 
