@@ -1,5 +1,17 @@
 #courseName{
   text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+#courseNameWrapper {
+  width: 40%;
+  margin-left: 30%;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  background-color: rgba(0,0,0,.2);
+  padding-top: 5px;
+  left: 
 }
 
 #container{
@@ -12,21 +24,25 @@
 
 .white-box{
   background-color: rgba(255,255,255,.7);
-  width: 90%;
+  width: 60%;
   height: auto;
   top: 15%;
-  margin-left: 5%;
+  margin-left: 20%;
   padding: 30px;
   position: absolute;
 }
 
-#contactPic{
+.contactPic{
   margin-right: 10px;
   float: left;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 #viewButton{
+  position: relative;
   float: right;
+  margin-left: 0px;
 }
 
 #addTutorRequest{
@@ -39,4 +55,41 @@
 
 #viewRequest{
   visibility: hidden;
+}
+
+.checked {
+  color: orange;
+}
+
+.unchecked {
+  color: rgba(0,0,0,.4);
+}
+
+.name-label {
+  margin: 0 auto;
+  position: relative;
+  float: left;
+  margin-top: 5px;
+}
+
+.rating {
+  height: 10px;
+  margin: 0 auto;
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.cost {
+  margin-top: 5px;
+  float: right;
+
+}
+
+
+.coin {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 10px;
+  float: right;
 }
