@@ -15,7 +15,6 @@ $( document ).ready(function() {
 function setUserInfo() {
 	$("#profile-pic").attr("src",getProfilePicUrl());
     $("#name").text(getUserName());
-    console.log(getMajor());
     $("#major").text(getMajor());
 
 }

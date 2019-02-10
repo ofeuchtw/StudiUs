@@ -31,6 +31,7 @@
     <script defer src="/__/firebase/init.js"></script>
     
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/main.css">
     
@@ -40,6 +41,10 @@
         
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         
+    <!-- stars -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <!-- jQuery CDN -->
     <script
       src="http://code.jquery.com/jquery-3.3.1.js"
@@ -67,16 +72,32 @@
 
 
     <div id="content">
-        <div class="row">
-          <div class="col-xl">
-            <img id="profile-pic" class="img-valign rounded-circle" src="../images/dog.jpg" alt="" />
-            <div class="info">
-              <p id="name"></p>
-              <p id="major"></p>
-              <p id="bio">This is where the person types their bio. They can write information about them to make their profile more complete.</p>   
-            </div>
-          </div>
-        </div>
+
+
+
+      <div id="pic-wrapper">
+        <img id="profile-pic" class="img-valign rounded-circle" src="../images/dog.jpg" alt="" />
+      </div>        
+        
+      <div id="info">
+        <p id="name"></p>
+        <p id="major"></p>
+        <p id="bio">This is where the person types their bio. They can write information about them to make their profile more complete. Lorem ipsum dolor sit amet, has alii facete recteque et, affert percipitur inciderint ut sit. Nec solum rebum et, laudem repudiandae eu sit, malis adipisci conceptam has ea. No vis brute possit diceret, usu idque movet et. No pri iriure debitis accusam. Mea ut case expetendis.</p>   
+      </div>
+
+      <div id="rating">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star unchecked"></span>
+        <span class="fa fa-star unchecked"></span>
+      </div>
+
+      <div id ="balance">
+        <p>200</p>
+        <img id="coin" src="../images/BBB.png">
+      </div>
+
     </div>
      <script src="../js/main.js"></script>
      <script src="../js/profile.js"></script>

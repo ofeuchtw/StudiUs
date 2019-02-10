@@ -7,12 +7,6 @@
   margin-right: 0;
 }
 
-.info{
-  vertical-align: bottom;
-  float: left;
-  margin-left: 20px;
-  margin-right: 0;
-}
 
 #name {
   left: 100px;
@@ -25,7 +19,7 @@
   left: 100px;
   font-size: 20px;
   font-style: bold;
-  margin: 0;
+  margin: 0
 }
 
 #bio{
@@ -39,10 +33,74 @@
 
 #content {
   background-color: rgba(255,255,255,.7);
-  width: 90%;
+  width: 60%;
   height: 80%;
   top: 15%;
-  margin-left: 5%;
-  padding: 30px;
+  margin-left: 20%;
+  padding: 40px;
   position: absolute;
+}
+
+#rating {
+  /*width: 100px;
+  height: 20px;
+  position: relative;
+  left: 0px;
+  overflow: auto;
+  top: -20px;*/
+  float: left;
+  top: 130px;
+  position: relative;
+  left: -105px;
+}
+
+
+#info{
+  position: absolute;
+  float: right;
+  margin-left: 140px;
+  padding: 0px;
+  width: 140%;
+}
+
+#pic-wrapper {
+float: left;
+
+}
+
+
+#balance {
+  background-color: rgba(0,0,0,.3);
+  width: 120px;
+  height: 40px;
+  top: 190px;
+  border-radius: 4px;
+  position: absolute;
+}
+
+#balance p {
+  position: relative;
+  margin-left: 20px;
+  margin-top: -4px;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  overflow: auto;
+}
+
+#coin {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  float: right;
+  margin-top:-52px;
+  margin-right: 5px;
+}
+
+.checked {
+  color: orange;
+}
+
+.unchecked {
+  color: rgba(0,0,0,.4);
 }
