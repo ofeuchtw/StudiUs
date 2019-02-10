@@ -1,7 +1,14 @@
 firebase.auth().onAuthStateChanged((user) => {
       if (user) {
-        console.log('user is logged');
-        console.log(isUserSignedIn());
+      
+
+        if( $('.searchbar').length ) {
+     		$(".searchbar").css("visibility", "visible");
+		}
+    	
+    	$("#setting_button").css("visibility", "visible");	
+    	$("#sign-in span").text("Sign Out");
+
       }
 });
 
@@ -15,9 +22,6 @@ $( document ).ready(function() {
  
 });
 
-$( window ).unload(function() {
-  
-});
 
 function signInOut() {
 	if(isUserSignedIn()) {
