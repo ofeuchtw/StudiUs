@@ -66,22 +66,32 @@
 
       </nav>
     </div>
-
-
     
     <div id="container">
-      <div class="list-group btn-light" id="listTutor">
+      <ul id="reqList">
+        <li>Shivani</li>
+      </ul>
+      <div class="list-group white-box" id="requestList">
         <h1 id="courseName">Course Name</h1>
-        <a href="#" class="list-group-item list-group-item-action"><img id="contactPic" src="../images/profile_placeholder.png" width=25, height=25>Orli<button class="btn btn-light" id="viewButton">view</button></a>
-        <a href="#" class="list-group-item list-group-item-action"><img id="contactPic" src="../images/profile_placeholder.png" width=25, height=25>Shivani<button class="btn btn-light" id="viewButton">view</button></a>
-        <a href="#" class="list-group-item list-group-item-action"><img id="contactPic" src="../images/profile_placeholder.png" width=25, height=25>Sammy<button class="btn btn-light" id="viewButton">view</button></a>
-        <a href="#" class="list-group-item list-group-item-action disabled"><img id="contactPic" src="../images/profile_placeholder.png" width=25, height=25>Nikhita<button class="btn btn-light" id="viewButton">view</button></a>
+        <a href="#" class="list-group-item list-group-item-action disabled"><img id="contactPic" src="../images/profile_placeholder.png" width=25, height=25>Orli<button class="btn btn-light" id="viewButton" onClick="viewRequest()">view</button></a>
+        <a href="#" class="list-group-item list-group-item-action disabled"><img id="contactPic" src="../images/profile_placeholder.png" width=25, height=25>Shivani<button class="btn btn-light" id="viewButton" onClick="viewRequest()">view</button></a>
+        <a href="#" class="list-group-item list-group-item-action disabled"><img id="contactPic" src="../images/profile_placeholder.png" width=25, height=25>Sammy<button class="btn btn-light" id="viewButton" onClick="viewRequest()">view</button></a>
+        <a href="#" class="list-group-item list-group-item-action disabled"><img id="contactPic" src="../images/profile_placeholder.png" width=25, height=25>Nikhita<button class="btn btn-light" id="viewButton" onClick="viewRequest()">view</button></a>
         
-        <button class="btn btn-light" id="addTutorRequest">Add Tutor Request</button>
+        <button class="btn btn-light" id="addTutorRequest">Add Tutor Request</button>    
       </div>
       
-      <div class="list-group btn-light" id="chat">
-    
+      <div class="card white-box" id="viewRequest">
+        <div class="card-header">
+          <img id="contactPic" src="../images/profile_placeholder.png" width=25, height=25><h6>Orli</h6>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p id="message">I do not understand homework 3. Could you help me? I keep getting segfaults :( </p>
+            <a href="../html/chatRoom.html">Accept</a>
+            <button class="btn btn-light acceptButton" onClick="viewRequest()">Reject</button>
+            </blockquote>
+        </div>
       </div>
     </div>
   </body>
