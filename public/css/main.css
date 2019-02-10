@@ -34,21 +34,14 @@ body {
 }
 
 #setting_button{
-  margin-left: 90%;
   position: absolute;
+  right: 110px;
   padding-bottom: 0;
   padding-right: 0;
   padding-left: 0;
   padding-top: 0;
 }
 
-/*mine*/
-#sign-in-box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: block;
-}
 
 #title-container {
 	text-align: center;
@@ -68,10 +61,12 @@ body {
 
 }
 
+
 .searchbar{
 	visibility: hidden;
-
-	margin-top: 23%;
+	/*margin-top: 23%;*/
+	/*position: absolute;*/
+	/*top: 50%;*/
 	height: 60px;
 	background-color: rgba(255,255,255,.4);
 	border-radius: 30px;

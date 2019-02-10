@@ -20,8 +20,9 @@ function signIn() {
   var provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider);
 
+  $(".searchbar").css("visibility", "visible");	
+  $("#sign-in span").text("Sign Out");
 
-    $(".searchbar").css("visibility", "visible");	
    
 }
 

@@ -62,29 +62,24 @@
           StudiUs
         </a>
         <button type="button" class="btn btn-light" id="setting_button"><img id="settings_icon" src="../images/settings_icon.png"></button>
-        <button type="button" class="btn btn-light">Sign-In</button>
+        <button type="button" id="sign-in" style="width: 90px;" class="btn btn-light" onclick=signInOut() value="Google Sign In" ><span class="ui-button-text">Sign In</span></button>
       </nav>
     </div>
 
-    <div id="sign-in-box"> <!--TODO: link box to profile -->
-       <input id="sign-in" type="button" onclick=signInOut() value="Google Sign In"/>
-       <img src="">
-      <!-- <input id="sign-out" type="button" onclick=signOut() value="Google Sign Out"/> -->
-    </div>
 
     <div id="title-container">
       <p id="title">StudiUs</p>
     </div>
 
 
-     <div class="container h-100">
+    <div class="container h-100" style="position: absolute; margin: 0 auto; width: 50%; left: 25%; top: 48%">
       <div class="d-flex justify-content-center h-100">
-        <form id="search-form" >
-        <div class="searchbar">
-          <input class="search_input" type="text" name="" placeholder="Search...">
-          <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-        </div>
-      </form>
+          <form id="search-form" >
+            <div class="searchbar">
+              <input class="search_input" type="text" name="" placeholder="Search...">
+              <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+            </div>
+          </form>
       </div>
     </div>
     
