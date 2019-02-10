@@ -56,10 +56,13 @@
           <img src="../images/StudiUs_Logo.png" width=60, height="40", id="logo" class="d-inline-block align-center" alt="">
           StudiUs
         </a>
+
         <button type="button" class="btn btn-light" id="setting_button"><img id="settings_icon" src="../images/settings_icon.png"></button>
-        <button type="button" class="btn btn-light">Sign-In</button>
+        <button type="button" id="sign-in" style="width: 90px;" class="btn btn-light" onclick=signInOut() value="Google Sign In" ><span class="ui-button-text">Sign In</span></button>
+
       </nav>
     </div>
+
 
     <div id="content">
         <div class="row">
@@ -74,6 +77,6 @@
         <p id="bio">This is where the person types their bio. They can write information about them to make their profile more complete.</p>    
       </div>
     </div>
-   
+     <script src="../js/main.js"></script>
   </body>
 </html>
