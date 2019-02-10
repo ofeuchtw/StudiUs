@@ -70,7 +70,7 @@ float: left;
 
 
 #balance {
-  background-color: rgba(0,0,0,.3);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.2));
   width: 120px;
   height: 40px;
   top: 200px;
