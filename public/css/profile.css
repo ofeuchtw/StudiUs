@@ -119,6 +119,61 @@ float: left;
 }
 
 
+.contactPic{
+  margin-right: 10px;
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.checked {
+  color: orange;
+}
+
+.unchecked {
+  color: rgba(0,0,0,.4);
+}
+
+.name-label {
+  margin: 0 auto;
+  position: relative;
+  float: left;
+  margin-top: 5px;
+}
+
+.rating {
+  height: 10px;
+  margin: 0 auto;
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.cost {
+  margin-top: 5px;
+  float: right;
+
+}
+#section1 {
+  margin-left: 45%;
+  width: 20%;
+}
+
+.coin {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 10px;
+  float: right;
+}
+
+.tutor {
+  background-color: #e8c7c0 !important;
+}
+
+.tutee {
+  background-color: #cee5be !important;
+}
+
 
 #history {
 /*  margin-top: 10%;*/
