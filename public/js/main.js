@@ -42,7 +42,6 @@ function signIn() {
   $(".searchbar").css("visibility", "visible");	
   $("#setting_button").css("visibility", "visible");	
   $("#sign-in span").text("Sign Out");
-
    
 }
 
@@ -55,22 +54,23 @@ function signOut() {
   $("#setting_button").css("visibility", "hidden");	
 }
 
-
-//TODO:
-function displaySignInBox() {
-	//when user is logged in, display profile picture, name, and log out button
-
-	//otherwise, display empty user image and log in button
-}
-
-
-
-
 // Initiate firebase auth.
 function initFirebaseAuth() {
   // Listen to auth state changes.
   firebase.auth().onAuthStateChanged(authStateObserver);
 }
+
+// Returns the signed-in user's display name.
+function getMajor() {
+
+ let UID = firebase.auth().currentUser.uid;
+
+ var db = firebase.firestore();
+ let major = db.collection('users').where("UID", "==", UID);
+ // .get().getString("major");
+ return major;
+}
+
 
 // Returns the signed-in user's profile Pic URL.
 function getProfilePicUrl() {
