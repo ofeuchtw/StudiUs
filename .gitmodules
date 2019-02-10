@@ -1,0 +1,3 @@
+[submodule "public/video-quickstart-js"]
+	path = public/video-quickstart-js
+	url = https://github.com/ofeuchtw/StudiUs/tree/master/
