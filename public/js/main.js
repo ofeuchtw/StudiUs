@@ -1,9 +1,22 @@
+firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        console.log('user is logged');
+        console.log(isUserSignedIn());
+      }
+});
 
 // A $( document ).ready() block.
 $( document ).ready(function() {
     if(isUserSignedIn()) {
-    	$(".searchbar").css("visibility", "visible");	
+    	$(".searchbar").css("visibility", "visible");
+    	$("#setting_button").css("visibility", "visible");	
+    	$("#sign-in span").text("Sign Out");
     } 
+ 
+});
+
+$( window ).unload(function() {
+  
 });
 
 function signInOut() {
@@ -18,9 +31,12 @@ function signInOut() {
 function signIn() {
   // Sign in Firebase using popup auth and Google as the identity provider.
   var provider = new firebase.auth.GoogleAuthProvider();
+
   firebase.auth().signInWithPopup(provider);
 
+
   $(".searchbar").css("visibility", "visible");	
+  $("#setting_button").css("visibility", "visible");	
   $("#sign-in span").text("Sign Out");
 
    
@@ -30,6 +46,9 @@ function signIn() {
 function signOut() {
   // Sign out of Firebase.
   firebase.auth().signOut();
+  $("#sign-in span").text("Sign In");
+  $(".searchbar").css("visibility", "hidden");	
+  $("#setting_button").css("visibility", "hidden");	
 }
 
 
