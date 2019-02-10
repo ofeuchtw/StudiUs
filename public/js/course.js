@@ -1,8 +1,6 @@
-$("#addTutorRequest").click(function() {           
-  $('#reqList').append('<li>'+Orli+'</li>')
-}); 
 
-function viewRequest() {
+
+function viewRequest(event) {
   var x = document.getElementById("requestList");
   var y = document.getElementById("viewRequest");
   if (x.style.visibility === "hidden") {
@@ -11,5 +9,8 @@ function viewRequest() {
   } else {
     x.style.visibility = "hidden";
     y.style.visibility = "visible";
+    console.log(event.target.value);
+    $("#view-name-label").text(event.target.value); 
   }
 }
+

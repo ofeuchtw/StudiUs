@@ -39,7 +39,7 @@
   margin-left: 10px;
 }
 
-#viewButton{
+.viewButton{
   position: relative;
   float: right;
   margin-left: 0px;
@@ -55,6 +55,10 @@
 
 #viewRequest{
   visibility: hidden;
+}
+
+#view-name-label {
+  margin-top: 10px;
 }
 
 .checked {
@@ -85,7 +89,6 @@
   float: right;
 
 }
-
 
 .coin {
   margin-top: 5px;

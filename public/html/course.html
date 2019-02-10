@@ -92,7 +92,7 @@
            <span class="cost">2</span>
           <img class="coin" src="../images/BBB.png" width=25, height=25>
          
-          <button class="btn btn-light" id="viewButton" onClick="viewRequest()">view</button></a>
+          <button class="btn btn-light viewButton" id="vb1" onClick="viewRequest(event)" value="Orli">view</button></a>
 
         <a href="#" class="list-group-item list-group-item-action disabled">
           <img class="contactPic" src="../images/profile_placeholder.png" width=25, height=25>
@@ -107,7 +107,7 @@
 
            <span class="cost">9</span>
           <img class="coin" src="../images/BBB.png" width=25, height=25>
-          <button class="btn btn-light" id="viewButton" onClick="viewRequest()">view</button></a>
+          <button class="btn btn-light viewButton" id="vb2" onClick="viewRequest(event)" value = "Shivani">view</button></a>
 
         <a href="#" class="list-group-item list-group-item-action disabled">
           <img class="contactPic" src="../images/profile_placeholder.png" width=25, height=25>
@@ -123,7 +123,7 @@
             <span class="cost">7</span>
             <img class="coin" src="../images/BBB.png" width=25, height=25>
            
-          <button class="btn btn-light" id="viewButton" onClick="viewRequest()">view</button></a>
+          <button class="btn btn-light viewButton" id="vb3" onClick="viewRequest(event)" value ="Sammy">view</button></a>
 
         <a href="#" class="list-group-item list-group-item-action disabled">
           <img class="contactPic" src="../images/profile_placeholder.png" width=25, height=25>
@@ -140,14 +140,15 @@
           <span class="cost">3</span>
           <img class="coin" src="../images/BBB.png" width=25, height=25>
 
-          <button class="btn btn-light" id="viewButton" onClick="viewRequest()">view</button></a>
+          <button class="btn btn-light viewButton" id="vb4" onClick="viewRequest(event)" value="Nikhita">view</button></a>
         
         <button class="btn btn-light" id="addTutorRequest">Add Tutor Request</button>    
       </div>
       
       <div class="card white-box" id="viewRequest">
         <div class="card-header">
-          <img class="contactPic" src="../images/profile_placeholder.png" width=25, height=25><h6>Orli</h6>
+          <img class="contactPic" src="../images/profile_placeholder.png" width=25, height=25>
+          <h6 id="view-name-label">Orli</h6>
         </div>
         <div class="card-body">
           <blockquote class="blockquote mb-0">
