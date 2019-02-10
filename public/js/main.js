@@ -66,8 +66,19 @@ function getMajor() {
  let UID = firebase.auth().currentUser.uid;
 
  var db = firebase.firestore();
- let major = db.collection('users').where("UID", "==", UID);
- // .get().getString("major");
+
+ var major = "Computer Science"
+ db.collection('users').doc("2zzF4Pfz01sJ6jlVhplr").get().then(function(doc) {
+    if (doc.exists) {
+        var major = doc.data().major;
+    } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+    }
+}).catch(function(error) {
+    console.log("Error getting document:", error);
+});
+
  return major;
 }
 
